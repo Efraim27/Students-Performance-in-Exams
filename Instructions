@@ -1,0 +1,21 @@
+Download the StudentsPerformance.csv file.
+Export the csv file to pgAdmin4 (PostgreSQL):
+  - Click "server"
+  - Click "schema"
+  - Right click "public"
+  - Click "CREATE Script"
+  - Remove all the codes from the script
+  - Copy the following syntaxes
+    "CREATE TABLE Public.students_performance (Gender varchar(20), race_or_ethnicity varchar(20), par_edu_lvl varchar(50),
+    lunch varchar(20), prep_course varchar(20), math_score int, reading_score int, writing_score int)
+  - Run the query
+  - Right click "public" and click "Refresh"
+  - Click "table" and click "students_performance
+  - Type "SELECT * FROM Public.students_performance;" to make sure the table has been created
+  - Right click "student_performance" and click "Import/Export"
+  - Make sure the "Import/Export" section says "Import"
+  - Copy paste the csv file location into the "Filename" section
+  - Check the "Header" section
+  - Click OK
+  - Refresh the table again
+  - Enter "SELECT * FROM students_performance" to retrieve all the data
